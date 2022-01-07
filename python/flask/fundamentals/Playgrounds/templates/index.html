@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playgrounds</title>
+    <style>
+        .main{
+            display:flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .box{
+            width: 20em;
+            height: 20em;
+            border-radius: 2em;
+            border: .2em solid black;
+            background-color: {{colour}}
+        }
+    </style>
+</head>
+<body>
+    <main class="main" >
+        {% for i in range(0,number): %}
+        <div class="box"></div>
+        {%endfor%}
+    </main>
+</body>
+</html>
